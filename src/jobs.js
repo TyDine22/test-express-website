@@ -22,16 +22,16 @@ const JOBS = [
         title: 'Data scientist',
         location: 'Remote',
         salary: '$150000',
-        posted: 'April 13, 2023',
+        posted: 'Apr 13, 2023',
         requirement: 'Degree in Computer Science, Data Structure and Algorithms'
     },
 
     {
         id: 4,
-        title: 'Data Analyse',
+        title: 'Data Analyst',
         location: 'Phnom Penh, Cambodia',
         salary: '$64000',
-        posted: 'April 22, 2023',
+        posted: 'Apr 22, 2023',
         requirement: 'Degree in Computer Science, Data Structure and Algorithms'
     }
 ]

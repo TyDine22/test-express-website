@@ -72,7 +72,8 @@
                     alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
             <div class="col-12 col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-center text-lg-start">Work at Jovian</h1>
+                <h1 class="display-4 fw-bold lh-1 mb-3 text-center text-body-emphasis d-lg-none">Work at {{companyName}}</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-body-emphasis d-none d-lg-block">Work at {{companyName}}</h1>
                 <p class="lead">
                     At Jovian, we're on a mission to build the world's most highly reputed techincal university, and
                     we're building it completely online. We offer several beginner friendly courses that are taken by
@@ -104,7 +105,7 @@
 
     <!-- JOBS -->
     <div class="container px-4 mt-5">
-        <h2 class="text-center mb-4">Job Opportunities<h2>
+        <h2 class="text-center mb-4">Job Opportunities</h2>
 
         <!-- JOBS LISTS -->
         <div class="d-md-none">
@@ -113,11 +114,35 @@
                     <div class="card-body">
                         <h5 class="card-title"><a href="/jobs/{{id}}">{{title}}</a></h5>
                         <h6 class="card-subtitle my-1 text-body-light">{{location}} • {{salary}}</h6>
-                        <h6 class="card-text text-body-secondary mb-1">Posted {{posted}}</h6>
-                        <h6 class="card-text text-body-secondary">Requirement {{requirement}}</h6>
+                        <small class="card-text text-body-secondary">Posted {{posted}}</small>
+                        <br>
+                        <small class="card-text text-body-secondary">Requirement {{requirement}}</small>
                     </div>
                 </div>
             {{/jobs}}
+        </div>
+
+        <!-- JOBS TABLE -->
+        <div class="offset-lg-2 col-lg-8">
+            <table class="d-none d-md-table table table-striped table-bordered">
+                <tr class="table-primary text-center">
+                    <th>Job Title</th>
+                    <th>Location</th>
+                    <th>Salary</th>
+                    <th>Posted on</th>
+                    <th>Requirement</th>
+                </tr>
+
+                {{#jobs}}
+                    <tr>
+                        <td><a href="/jobs/{{id}}">{{title}}</td>
+                        <td>{{location}}</td>
+                        <td>{{salary}}</td>
+                        <td>{{posted}}</td>
+                        <td>{{requirement}}</td>
+                    </tr>
+                {{/jobs}}
+            </table>
         </div>
     </div>
 
@@ -130,7 +155,7 @@
                 <li class="nav-item"><a href="https://www.youtube.com/channel/UCK9u6v51Rv-ahStJSuLBB4Q" class="nav-link px-2 text-body-secondary" target="_blank">Youtube</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sign in</a></li>
             </ul>
-            <p class="text-center text-body-secondary">© 2023 Jovian (SwiftAce Inc.)</p>
+            <p class="text-center text-body-secondary">© 2023 Lethal (SwiftAce Inc.)</p>
         </footer>
     </div>
 
